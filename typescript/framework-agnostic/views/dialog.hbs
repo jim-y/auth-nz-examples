@@ -1,0 +1,15 @@
+<div class="dialog-wrap">
+  {{#if authorizationServer.error}}
+  <h2>Error: {{authorizationServer.error.error_description}}</h2>
+  {{else}}
+  <form name="consent-form" action="/oauth/authorize/decision" method="POST" class="dialog">
+    <p>XY wants to get access to your profile information. Do you allow?</p>
+    <input type="hidden" name="consent" id="consent">
+    <input type="hidden" name="meta" value="{{payload}}"">
+    <div class="action-wrap">
+      <button type="submit">Cancel</button>
+      <button type="submit" class="allow-btn">Allow</button>
+    </div>
+  </form>
+  {{/if}}
+</div>

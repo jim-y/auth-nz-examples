@@ -1,0 +1,14 @@
+<div class="dialog-wrap">
+  {{#if error}}
+  <h2>Error: {{error.error_description}}</h2>
+  {{else}}
+  <form name="consent-form" action="/oauth/authorize/decision" method="POST" class="dialog">
+    <p>XY wants to get access to your profile information. Do you allow?</p>
+    <input type="text" name="consent" id="consent" style="display:none">
+    <div class="action-wrap">
+      <button type="submit">Cancel</button>
+      <button type="submit" class="allow-btn">Allow</button>
+    </div>
+  </form>
+  {{/if}}
+</div>

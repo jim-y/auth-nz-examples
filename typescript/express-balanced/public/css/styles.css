@@ -1,0 +1,64 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-form-wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 30px;
+  height: 180px;
+  background-color: beige;
+  border-radius: 20px;
+}
+
+.login-form > input {
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.login-form button[type='submit'] {
+  margin-top: 15px;
+  height: 50px;
+}
+
+/* DIALOG */
+
+.dialog-wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.dialog {
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 30px;
+  height: 180px;
+  background-color: beige;
+  border-radius: 20px;
+}
+
+.dialog .action-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

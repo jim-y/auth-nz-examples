@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Disabling to be able to use verdaccio for local development
+.npmrc
